@@ -1,4 +1,4 @@
-import { Input } from 'antd';
+import { Input, InputRef } from 'antd';
 import { JobStatusType } from './Job';
 
 export interface ErrorLogReduxState {
@@ -114,17 +114,17 @@ export interface SearchedColumnState {
 }
 
 export interface SearchInputRef {
-  error_code: Input | null;
-  equipment_name: Input | null;
-  error_message: Input | null;
-  occurrence_count: Input | null;
-  occurred_date: Input | null;
-  ppid: Input | null;
-  device: Input | null;
-  process: Input | null;
-  glass_id: Input | null;
-  lot_id: Input | null;
-  chuck: Input | null;
+  error_code: InputRef | null;
+  equipment_name: InputRef | null;
+  error_message: InputRef | null;
+  occurrence_count: InputRef | null;
+  occurred_date: InputRef | null;
+  ppid: InputRef | null;
+  device: InputRef | null;
+  process: InputRef | null;
+  glass_id: InputRef | null;
+  lot_id: InputRef | null;
+  chuck: InputRef | null;
 }
 
 export type PLAN_FTP_TYPE = 'FTP' | 'VFTP(COMPAT)' | 'VFTP(SSS)';

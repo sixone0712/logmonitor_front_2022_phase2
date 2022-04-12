@@ -1,6 +1,6 @@
 import { SearchOutlined } from '@ant-design/icons';
 import { css } from '@emotion/react';
-import { Button, Input, Modal, Space } from 'antd';
+import { Button, Input, InputRef, Modal, Space } from 'antd';
 import { FilterConfirmProps, FilterDropdownProps } from 'antd/lib/table/interface';
 import { saveAs } from 'file-saver';
 import React, { useCallback, useMemo, useRef, useState } from 'react';
@@ -428,7 +428,7 @@ const getColumnSearchProps = ({
   dataIndex: keyof ErrorLogState;
   searchText: React.Key;
   searchedColumn: boolean;
-  searchInputRef: React.MutableRefObject<Input | null>['current'];
+  searchInputRef: React.MutableRefObject<InputRef | null>['current'];
   handleSearch: (
     selectedKeys: React.Key[],
     confirm: (param?: FilterConfirmProps | undefined) => void,

@@ -54,7 +54,10 @@ export default function RemoteJobPlan({ type }: RemoteJobPlanProps): JSX.Element
           loading={isFetchingSiteList}
           disabled={isFetchingSiteList || type === 'edit'}
           optionFilterProp="children"
-          filterOption={(input, option) => option?.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}
+          //filterOption={(input, option) => option?.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}
+          filterOption={(input, option) =>
+            Boolean(((option?.children as unknown) as string).toLowerCase().indexOf(input.toLowerCase()) >= 0)
+          }
         >
           {siteList?.map((item) => (
             <Select.Option key={item.siteId} value={item.siteId} label={item.crasCompanyFabName}>

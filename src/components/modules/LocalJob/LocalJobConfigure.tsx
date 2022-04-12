@@ -50,7 +50,10 @@ export default function LocalJobConfigure({}: LocalJobConfigureProps): JSX.Eleme
           loading={isFetchingSiteList}
           disabled={isFetchingSiteList}
           optionFilterProp="children"
-          filterOption={(input, option) => option?.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}
+          //filterOption={(input, option) => option?.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}
+          filterOption={(input, option) =>
+            Boolean(((option?.children as unknown) as string).toLowerCase().indexOf(input.toLowerCase()) >= 0)
+          }
         >
           {siteList?.map((item) => (
             <Select.Option key={item.siteId} value={item.siteId} label={item.crasCompanyFabName}>

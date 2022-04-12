@@ -180,7 +180,7 @@ export const ConvertOutputColumnSelect = React.memo(function ConvertHeaderOutput
           css={css}
           placeholder="Select a type"
           value={record.output_column_select ?? undefined}
-          onSelect={(value) => onChangeSelect(record.index as number, value as string)}
+          onSelect={(value: string) => onChangeSelect(record.index as number, value as string)}
           disabled={disabled || record.skip}
         >
           {options &&
@@ -221,7 +221,7 @@ export const ConvertDataType = React.memo(function ConvertDataTypeData({
       css={css}
       placeholder="Select a type"
       value={record.data_type ?? undefined}
-      onSelect={(value) => onChangeDataType(record.index as number, value as string)}
+      onSelect={(value: string) => onChangeDataType(record.index as number, value as string)}
       disabled={disabled || record.skip}
     >
       {options?.data_type &&
@@ -287,7 +287,7 @@ export const ConvertDefaultValue = React.memo(function ConvertDefaultValueData({
         css={css}
         placeholder="Select a value"
         value={record.def_type ?? undefined}
-        onSelect={(value) => onChangeDefType(record.index as number, value as string)}
+        onSelect={(value: string) => onChangeDefType(record.index as number, value as string)}
         disabled={disabled || record.skip}
       >
         {options?.def_type &&

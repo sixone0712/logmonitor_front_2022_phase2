@@ -131,7 +131,7 @@ export const ConvertFilterType = React.memo(function ConvertFilterTypeData({
       css={css}
       placeholder="Select a type"
       value={record.type ?? undefined}
-      onSelect={(value) => onChangeDataType(record.index as number, value as string)}
+      onSelect={(value: string) => onChangeDataType(record.index as number, value as string)}
       disabled={disabled}
     >
       {options?.filter_type &&

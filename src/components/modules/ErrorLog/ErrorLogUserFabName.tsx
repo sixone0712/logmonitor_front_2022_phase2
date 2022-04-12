@@ -31,7 +31,10 @@ export default React.memo(function ErrorLogUserFabName({}: ErrorLogUserFabNamePr
           onSelect={onChangeSiteInfo}
           loading={isFetchingSiteList}
           optionFilterProp="children"
-          filterOption={(input, option) => option?.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}
+          //filterOption={(input, option) => option?.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}
+          filterOption={(input, option) =>
+            Boolean(((option?.children as unknown) as string).toLowerCase().indexOf(input.toLowerCase()) >= 0)
+          }
           allowClear
           onClear={onClearSiteInfo}
         >
