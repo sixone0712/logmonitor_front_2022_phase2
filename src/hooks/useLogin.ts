@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { login } from '../lib/api/axios/requests';
 import { LoginUserInfo, ReqLogin } from '../lib/api/axios/types';
-import md5 from '../lib/api/md5';
+import md5 from 'md5';
 import { MUTATION_KEY } from '../lib/api/query/mutationKey';
 import { PAGE_URL } from '../lib/constants';
 import { openNotification } from '../lib/util/notification';

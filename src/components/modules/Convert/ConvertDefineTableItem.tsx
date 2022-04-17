@@ -4,7 +4,7 @@ import { css, SerializedStyles } from '@emotion/react';
 import { Form, Input, InputNumber, Popconfirm, Select, Space } from 'antd';
 import { useForm } from 'antd/lib/form/Form';
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
-import { useDebouncedCallback } from 'use-debounce/lib';
+import { useDebouncedCallback } from 'use-debounce';
 import { convertDataTypeNumber } from '../../../lib/util/convertRule';
 import { RuleColumnData, RuleData, RuleOption } from '../../../types/convertRules';
 

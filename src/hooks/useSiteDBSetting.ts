@@ -21,7 +21,7 @@ import {
   ReqPutSiteDBInfo,
   SiteDBInfo,
 } from '../lib/api/axios/types';
-import md5 from '../lib/api/md5';
+import md5 from 'md5';
 import {
   CRAS_LOCALHOST_NAME,
   DEFAULT_PASSWORD_VALUE,

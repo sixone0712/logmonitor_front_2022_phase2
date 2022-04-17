@@ -15,8 +15,11 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": ["@emotion/react/types/css-prop", "node", "jest"],
-    "strictNullChecks": true
+    "jsxImportSource": "@emotion/react",
+    "types": ["vite/client", "vite-plugin-svgr/client", "@emotion/react/types/css-prop", "node", "jest"],
+    "strictNullChecks": true,
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["src/test"],
+  "references": [{ "path": "./tsconfig.node.json" }],
 }

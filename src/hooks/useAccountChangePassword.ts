@@ -5,7 +5,7 @@ import { useMutation } from 'react-query';
 import { useSelector } from 'react-redux';
 import { putUserPassword } from '../lib/api/axios/requests';
 import { ReqUserPassword } from '../lib/api/axios/types';
-import md5 from '../lib/api/md5';
+import md5 from 'md5';
 import { MUTATION_KEY } from '../lib/api/query/mutationKey';
 import { ERROR_MESSAGE } from '../lib/constants';
 import { openNotification } from '../lib/util/notification';

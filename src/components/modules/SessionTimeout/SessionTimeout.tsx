@@ -4,7 +4,7 @@ import React, { Fragment, useCallback, useEffect, useRef, useState } from 'react
 import { useCookies } from 'react-cookie';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
-import { useThrottledCallback } from 'use-debounce/lib';
+import { useThrottledCallback } from 'use-debounce';
 import { logout } from '../../../lib/api/axios/requests';
 import { ACCESS_TOKEN_NAME, PAGE_URL, REFRESH_TOKEN_NAME, TOKEN_PATH } from '../../../lib/constants';
 import { initLoginUser, LoginUserSelector } from '../../../reducers/slices/loginUser';

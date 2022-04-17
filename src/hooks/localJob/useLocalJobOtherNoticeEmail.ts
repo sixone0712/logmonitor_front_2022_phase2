@@ -1,6 +1,6 @@
 import { useCallback, useRef } from 'react';
 import { useDispatch } from 'react-redux';
-import { useDebouncedCallback } from 'use-debounce/lib';
+import { useDebouncedCallback } from 'use-debounce';
 import { searchAddressEmailAndGroup } from '../../lib/api/axios/requests';
 import {
   localJobErrorNoticeReducer,

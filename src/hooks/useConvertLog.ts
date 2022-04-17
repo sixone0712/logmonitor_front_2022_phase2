@@ -3,7 +3,7 @@ import { AxiosError } from 'axios';
 import { ChangeEventHandler, useCallback, useEffect, useRef } from 'react';
 import { useQuery } from 'react-query';
 import { useDispatch, useSelector } from 'react-redux';
-import { useDebouncedCallback } from 'use-debounce/lib';
+import { useDebouncedCallback } from 'use-debounce';
 import { getConvertBaseRule, getConvertRuleList } from '../lib/api/axios/requests';
 import { QUERY_KEY } from '../lib/api/query/queryKey';
 import { setResConvertData } from '../lib/util/convertRule';

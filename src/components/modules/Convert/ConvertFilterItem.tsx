@@ -2,7 +2,7 @@ import { css, SerializedStyles } from '@emotion/react';
 import { Form, Input, Select } from 'antd';
 import { useForm } from 'antd/lib/form/Form';
 import React, { useEffect, useMemo, useState } from 'react';
-import { useDebouncedCallback } from 'use-debounce/lib';
+import { useDebouncedCallback } from 'use-debounce';
 import { RuleFilterData, RuleOption } from '../../../types/convertRules';
 import { convertRegexValidate } from './ConvertDefineTableItem';
 

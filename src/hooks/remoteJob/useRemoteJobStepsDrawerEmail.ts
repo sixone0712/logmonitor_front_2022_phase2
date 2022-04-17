@@ -1,7 +1,7 @@
 import { FormInstance } from 'antd';
 import { ChangeEvent, useCallback, useEffect, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { useDebouncedCallback } from 'use-debounce/lib';
+import { useDebouncedCallback } from 'use-debounce';
 import { searchAddressEmailAndGroup } from '../../lib/api/axios/requests';
 import { remoteJobVisibleReducer, selectRemoteJobVisible } from '../../reducers/slices/remoteJob';
 import useTypedSelector from '../../reducers/useTypedSelector';
